@@ -12,8 +12,28 @@ body {
   min-height: 100vh;
 }
 
+main {
+  padding: 60px 24px;
+}
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.element__window--icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
 }

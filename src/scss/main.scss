@@ -37,3 +37,21 @@ main {
   border: 2px solid white;
   border-radius: 50%;
 }
+
+.element {
+  border-radius: 16px;
+  background: $darkblue;
+  overflow: hidden;
+
+  &__icon {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    top: -6px;
+    left: 77%;
+  }
+  &__window {
+    height: 30px;
+    background: $lightredwork;
+  }
+}

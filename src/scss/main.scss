@@ -2,8 +2,20 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
+  font-family: Rubik;
   background: $verydarkblue;
   color: #fff;
   display: flex;
@@ -39,19 +51,52 @@ main {
 }
 
 .element {
-  border-radius: 16px;
-  background: $darkblue;
+  border-radius: 10px;
   overflow: hidden;
-
+  min-width: 100%;
+  &__content {
+    padding: 18px;
+    border-radius: 10px;
+    background: $darkblue;
+  }
+  &__elipses {
+    text-align: right;
+    justify-items: center;
+    position: relative;
+    top: -4px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 8px;
+  }
   &__icon {
     position: relative;
-    width: 54px;
-    height: 54px;
-    top: -6px;
-    left: 77%;
+    width: 60px;
+    height: 60px;
+    top: -7px;
+    left: 74%;
+  }
+  &__lastweek {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    line-height: 32px;
+    color: $paleblue;
+  }
+  &__time {
+    font-size: 28px;
+    font-weight: 300;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
   }
   &__window {
     height: 30px;
+    overflow: hidden;
+  }
+  &__work {
     background: $lightredwork;
   }
 }

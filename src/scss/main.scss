@@ -69,13 +69,16 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 0 8px;
+    &:nth-child(2) {
+      margin: 0;
+    }
   }
   &__icon {
     position: relative;
     width: 60px;
     height: 60px;
     top: -7px;
-    left: 74%;
+    left: 70%;
   }
   &__lastweek {
     font-size: 12px;
@@ -98,5 +101,20 @@ main {
   }
   &__work {
     background: $lightredwork;
+  }
+  &__play {
+    background: $softblue;
+  }
+  &__study {
+    background: $lightredstudy;
+  }
+  &__excercise {
+    background: $limegreen;
+  }
+  &__social {
+    background: $violet;
+  }
+  &__self-care {
+    background: $softorange;
   }
 }

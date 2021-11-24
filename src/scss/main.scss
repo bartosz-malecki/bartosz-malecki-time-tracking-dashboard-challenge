@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  padding: 60px 24px;
+  padding: 60px 20px;
 }
 .grid-wrapper {
   display: grid;
@@ -43,21 +43,20 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-.element__window--icon {
-  width: 40px;
-  height: 40px;
-  border: 2px solid white;
-  border-radius: 50%;
-}
-
 .element {
-  border-radius: 10px;
+  border-radius: 13px;
   overflow: hidden;
   min-width: 100%;
+  background: $darkblue;
   &__content {
     padding: 18px;
-    border-radius: 10px;
+    border-radius: 13px;
     background: $darkblue;
+    &--main {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 24px;
+    }
   }
   &__elipses {
     text-align: right;
@@ -98,6 +97,21 @@ main {
   &__window {
     height: 30px;
     overflow: hidden;
+    &--icon {
+      width: 65px;
+      height: 65px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+    &--main {
+      padding: 20px;
+      margin: 0;
+      background: $blue;
+      border-radius: 13px;
+      grid-template-columns: 65px 1fr;
+      gap: 12px;
+      align-items: center;
+    }
   }
   &__work {
     background: $lightredwork;
@@ -117,4 +131,16 @@ main {
   &__self-care {
     background: $softorange;
   }
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  color: $paleblue;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
 }

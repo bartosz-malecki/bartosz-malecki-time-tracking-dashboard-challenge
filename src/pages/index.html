@@ -27,7 +27,9 @@
             </p>
           </div>
           <div class="element__content element__content--main">
-            <span>Daily</span> <span>Weekly</span> <span>Monthly</span>
+            <span class="daily--js">Daily</span>
+            <span class="weekly--js">Weekly</span>
+            <span class="monthly--js">Monthly</span>
           </div>
         </article>
 
@@ -46,22 +48,18 @@
                 ><img src="../assets/img/icon-ellipsis.svg" alt="" class=""
               /></span>
             </h3>
-            <p class="element__grid">
+            <p class="element__grid daily hidden">
+              <span class="element__time">5hrs</span>
+              <span class="element__lastweek">Yesterday - 7hrs</span>
+            </p>
+            <p class="element__grid weekly">
               <span class="element__time">32hrs</span>
               <span class="element__lastweek">Last Week - 36hrs</span>
             </p>
-            <!-- 5hrs -->
-            <!-- daily -->
-            <!-- Previous - 7hrs -->
-            <!-- daily -->
-
-            <!-- weekly -->
-
-            <!-- weekly -->
-            <!-- 103hrs -->
-            <!-- monthly -->
-            <!-- Previous - 128hrs -->
-            <!-- monthly -->
+            <p class="element__grid monthly hidden">
+              <span class="element__time">103hrs</span>
+              <span class="element__lastweek">Last Month - 128hrs</span>
+            </p>
           </div>
         </article>
         <article class="element element__play">
@@ -79,13 +77,21 @@
                 ><img src="../assets/img/icon-ellipsis.svg" alt="" class=""
               /></span>
             </h3>
-            <p class="element__grid">
+            <p class="element__grid daily">
+              <span class="element__time">1hrs</span>
+              <span class="element__lastweek">Yesterday - 2hrs</span>
+            </p>
+            <p class="element__grid weekly">
               <span class="element__time">10hrs</span>
               <span class="element__lastweek">Last Week - 8hrs</span>
             </p>
+            <p class="element__grid monthly">
+              <span class="element__time">23hrs</span>
+              <span class="element__lastweek">Last Month - 29hrs</span>
+            </p>
             <!--  1hr -->
             <!-- daily -->
-            <!-- Previous - 2hrs -->
+            <!-- Yesterday - 2hrs -->
             <!-- daily -->
 
             <!-- weekly -->
@@ -93,7 +99,7 @@
             <!-- weekly -->
             <!-- 23hrs -->
             <!-- monthly -->
-            <!-- Previous - 29hrs -->
+            <!-- Last Month - 29hrs -->
             <!-- monthly -->
           </div>
         </article>
@@ -119,7 +125,7 @@
             </p>
             <!-- 0hrs -->
             <!-- daily -->
-            <!-- Previous - 1hr -->
+            <!-- Yesterday - 1hr -->
             <!-- daily -->
 
             <!-- weekly -->
@@ -127,7 +133,7 @@
             <!-- weekly -->
             <!-- 13hrs -->
             <!-- monthly -->
-            <!-- Previous - 19hrs -->
+            <!-- Last Month - 19hrs -->
             <!-- monthly -->
           </div>
         </article>
@@ -152,7 +158,7 @@
             </p>
             <!-- 1hr -->
             <!-- daily -->
-            <!-- Previous - 1hr -->
+            <!-- Yesterday - 1hr -->
             <!-- daily -->
 
             <!-- weekly -->
@@ -160,7 +166,7 @@
             <!-- weekly -->
             <!-- 11hrs -->
             <!-- monthly -->
-            <!-- Previous - 18hrs -->
+            <!-- Last Month - 18hrs -->
             <!-- monthly -->
           </div>
         </article>
@@ -185,7 +191,7 @@
             </p>
             <!-- 1hr -->
             <!-- daily -->
-            <!-- Previous - 3hrs -->
+            <!-- Yesterday - 3hrs -->
             <!-- daily -->
 
             <!-- weekly -->
@@ -193,7 +199,7 @@
             <!-- weekly -->
             <!-- 21hrs -->
             <!-- monthly -->
-            <!-- Previous - 23hrs -->
+            <!-- Last Month - 23hrs -->
             <!-- monthly -->
           </div>
         </article>
@@ -218,7 +224,7 @@
             </p>
             <!-- 0hrs -->
             <!-- daily -->
-            <!-- Previous - 1hr -->
+            <!-- Yesterday - 1hr -->
             <!-- daily -->
 
             <!-- weekly -->
@@ -226,7 +232,7 @@
             <!-- weekly -->
             <!-- 7hrs -->
             <!-- monthly -->
-            <!-- Previous - 11hrs -->
+            <!-- Last Month - 11hrs -->
             <!-- monthly -->
           </div>
         </article>

@@ -27,6 +27,7 @@ body {
 main {
   padding: 60px 20px;
 }
+
 .grid-wrapper {
   display: grid;
   gap: 24px;
@@ -56,6 +57,12 @@ main {
       display: flex;
       justify-content: space-between;
       padding-left: 24px;
+      > span {
+        color: $desaturatedblue;
+        &:active {
+          color: #fff;
+        }
+      }
     }
   }
   &__elipses {
@@ -133,6 +140,9 @@ main {
   }
 }
 
+.hidden {
+  display: none;
+}
 .subtitle {
   font-size: 14px;
   font-weight: 300;

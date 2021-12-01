@@ -7,30 +7,24 @@ const activDaily = document.querySelectorAll(".daily");
 const activWeekly = document.querySelectorAll(".weekly");
 const activMonthly = document.querySelectorAll(".monthly");
 
-// daily.addEventListener("click", function () {});
-
 const showDaily = function () {
-  //   activWeekly.classList.add("hidden");
-  //   activMonthly.classList.add("hidden");
-  activDaily.classList.remove("hidden");
-  console.log("as");
+  activDaily.forEach((p) => p.classList.remove("hidden"));
+  activWeekly.forEach((p) => p.classList.add("hidden"));
+  activMonthly.forEach((p) => p.classList.add("hidden"));
 };
 
 const showWeekly = function () {
-  activDaily.classList.add("hidden");
-  activMonthly.classList.add("hidden");
-  activWeekly.classList.remove("hidden");
-  console.log("dupa");
+  activDaily.forEach((p) => p.classList.add("hidden"));
+  activWeekly.forEach((p) => p.classList.remove("hidden"));
+  activMonthly.forEach((p) => p.classList.add("hidden"));
 };
 
 const showMonthly = function () {
-  activWeekly.classList.add("hidden");
-  activDaily.classList.add("hidden");
-  activMonthly.classList.remove("hidden");
-  console.log("elo");
+  activDaily.forEach((p) => p.classList.add("hidden"));
+  activWeekly.forEach((p) => p.classList.add("hidden"));
+  activMonthly.forEach((p) => p.classList.remove("hidden"));
 };
 
 daily.addEventListener("click", showDaily);
-
-activWeekly.forEach((p) => p.addEventListener("click", showWeekly));
-activMonthly.forEach((p) => p.addEventListener("click", showMonthly));
+weekly.addEventListener("click", showWeekly);
+monthly.addEventListener("click", showMonthly);

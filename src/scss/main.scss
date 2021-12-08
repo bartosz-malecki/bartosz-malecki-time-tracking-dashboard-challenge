@@ -1,7 +1,6 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 html {
@@ -53,13 +52,22 @@ main {
     padding: 18px;
     border-radius: 13px;
     background: $darkblue;
+    &:hover {
+      background: #3a3e80;
+    }
     &--main {
       display: flex;
       justify-content: space-between;
       padding-left: 24px;
+      &:hover {
+        background: none;
+      }
       > span {
         color: $desaturatedblue;
-        &:active {
+        &:checked {
+          color: #fff;
+        }
+        &:hover {
           color: #fff;
         }
       }
@@ -70,13 +78,18 @@ main {
     justify-items: center;
     position: relative;
     top: -4px;
+    &--icon {
+      :hover {
+        background: #fff;
+      }
+    }
   }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 0 8px;
-    &:nth-child(2) {
-      margin: 0;
+    margin: 0;
+    &:nth-child(1) {
+      margin: 0 0 8px;
     }
   }
   &__icon {
@@ -143,6 +156,7 @@ main {
 .hidden {
   display: none;
 }
+
 .subtitle {
   font-size: 14px;
   font-weight: 300;

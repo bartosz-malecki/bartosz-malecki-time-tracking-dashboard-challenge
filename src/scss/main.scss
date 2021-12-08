@@ -39,6 +39,7 @@ main {
   text-align: center;
   display: none;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -78,11 +79,6 @@ main {
     justify-items: center;
     position: relative;
     top: -4px;
-    &--icon {
-      :hover {
-        background: #fff;
-      }
-    }
   }
   &__grid {
     display: grid;

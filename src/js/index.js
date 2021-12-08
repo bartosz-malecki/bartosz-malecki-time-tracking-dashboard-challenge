@@ -7,22 +7,33 @@ const activDaily = document.querySelectorAll(".daily");
 const activWeekly = document.querySelectorAll(".weekly");
 const activMonthly = document.querySelectorAll(".monthly");
 
+weekly.style.color = "#fff";
+
 const showDaily = function () {
   activDaily.forEach((p) => p.classList.remove("hidden"));
   activWeekly.forEach((p) => p.classList.add("hidden"));
   activMonthly.forEach((p) => p.classList.add("hidden"));
+  daily.style.color = "#fff";
+  weekly.style.color = "";
+  monthly.style.color = "";
 };
 
 const showWeekly = function () {
   activDaily.forEach((p) => p.classList.add("hidden"));
   activWeekly.forEach((p) => p.classList.remove("hidden"));
   activMonthly.forEach((p) => p.classList.add("hidden"));
+  weekly.style.color = "#fff";
+  daily.style.color = "";
+  monthly.style.color = "";
 };
 
 const showMonthly = function () {
   activDaily.forEach((p) => p.classList.add("hidden"));
   activWeekly.forEach((p) => p.classList.add("hidden"));
   activMonthly.forEach((p) => p.classList.remove("hidden"));
+  monthly.style.color = "#fff";
+  daily.style.color = "";
+  weekly.style.color = "";
 };
 
 daily.addEventListener("click", showDaily);

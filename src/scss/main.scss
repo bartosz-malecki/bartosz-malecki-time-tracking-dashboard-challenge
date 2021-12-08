@@ -25,6 +25,7 @@ body {
 
 main {
   padding: 60px 20px;
+  width: $mobile;
 }
 
 .grid-wrapper {
@@ -46,7 +47,6 @@ main {
 
 .element {
   border-radius: 13px;
-  overflow: hidden;
   min-width: 100%;
   background: $darkblue;
   &__content {
@@ -59,7 +59,7 @@ main {
     &--main {
       display: flex;
       justify-content: space-between;
-      padding-left: 24px;
+      padding-left: 30px;
       &:hover {
         background: none;
       }
@@ -93,7 +93,7 @@ main {
     width: 60px;
     height: 60px;
     top: -7px;
-    left: 70%;
+    left: 77%;
   }
   &__lastweek {
     font-size: 12px;
@@ -116,16 +116,15 @@ main {
     &--icon {
       width: 65px;
       height: 65px;
-      border: 2px solid white;
+      border: 3px solid white;
       border-radius: 50%;
     }
     &--main {
-      padding: 20px;
-      margin: 0;
+      padding: 24px;
       background: $blue;
       border-radius: 13px;
       grid-template-columns: 65px 1fr;
-      gap: 12px;
+      gap: 16px;
       align-items: center;
     }
   }

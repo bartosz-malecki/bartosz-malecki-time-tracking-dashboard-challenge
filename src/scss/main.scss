@@ -26,6 +26,9 @@ body {
 main {
   padding: 60px 20px;
   width: $mobile;
+  @media (min-width: 768px) {
+    width: 1000px;
+  }
 }
 
 .grid-wrapper {
@@ -33,12 +36,22 @@ main {
   gap: 24px;
   margin: 0 auto;
   justify-items: center;
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 440px;
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
   display: none;
+  // do zmiany potem
+  @media (min-width: 1024px) {
+    display: block;
+  }
 }
 
 .attribution a {
@@ -72,6 +85,13 @@ main {
           color: #fff;
         }
       }
+      @media (min-width: 768px) {
+        flex-direction: column;
+        padding-left: 24px;
+      }
+    }
+    @media (min-width: 768px) {
+      height: 160px;
     }
   }
   &__elipses {
@@ -102,6 +122,12 @@ main {
     line-height: 32px;
     color: $paleblue;
   }
+  &__main {
+    @media (min-width: 768px) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  }
   &__time {
     font-size: 28px;
     font-weight: 300;
@@ -113,6 +139,11 @@ main {
   &__window {
     height: 30px;
     overflow: hidden;
+    &--description {
+      @media (min-width: 768px) {
+        padding-bottom: 40px;
+      }
+    }
     &--icon {
       width: 65px;
       height: 65px;
@@ -126,6 +157,11 @@ main {
       grid-template-columns: 65px 1fr;
       gap: 16px;
       align-items: center;
+      @media (min-width: 768px) {
+        grid-template-columns: none;
+        grid-template-rows: 65px 1fr;
+        gap: 30px;
+      }
     }
   }
   &__work {
@@ -162,4 +198,8 @@ main {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }

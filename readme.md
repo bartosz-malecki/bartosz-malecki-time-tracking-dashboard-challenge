@@ -16,8 +16,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -35,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://bartosz-malecki.github.io/time-tracking-dashboard-challenge/)
+- Live Site URL: [https://bartosz-malecki.github.io/time-tracking-dashboard-challenge/](https://bartosz-malecki.github.io/time-tracking-dashboard-challenge/)
 
 ## My process
 
@@ -67,10 +65,11 @@ I want to improve my skills. I'll do a few more challenges from Frontend Mentor,
 
 ### Useful resources
 
-- [Example resource 1](https://css-tricks.com) - This helped me for remembering CSS functionalities. I really liked this page and will use it going forward.
-- [Example resource 2](https://udemy.com) - I used a few of my buyouts courses to check out some JS stuff.
+- [CSS Tricks](https://css-tricks.com) - This helped me for remembering CSS functionalities. I really liked this page and will use it going forward.
+- [Udemy.com](https://udemy.com) - I used a few of my buyouts courses to check out some JS stuff.
+- [Stackoverflow](https://stackoverflow.com/) - I used to find some useful advice.
 
 ## Author
 
 - Website - [Add your name here](https://github.com/bartosz-malecki)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@bartosz-malecki](https://www.frontendmentor.io/profile/bartosz-malecki)

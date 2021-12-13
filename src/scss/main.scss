@@ -16,7 +16,7 @@ html {
 body {
   font-family: Rubik;
   background: $verydarkblue;
-  color: #fff;
+  color: $white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,23 +24,24 @@ body {
 }
 
 main {
-  padding: 60px 20px;
-  width: $mobile;
-  @media (min-width: 768px) {
-    width: 1000px;
-  }
+  padding: 90px 24px;
+}
+
+@mixin icon($left, $top) {
+  left: $left;
+  top: $top;
 }
 
 .grid-wrapper {
   display: grid;
-  gap: 20px;
+  gap: 24px;
   margin: 0 auto;
   justify-items: center;
-  @media (min-width: 768px) {
-    margin-bottom: 48px;
+  @media (min-width: $desktop) {
+    margin-bottom: 72px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    height: 400px;
+    height: 424px;
   }
 }
 
@@ -48,7 +49,6 @@ main {
   font-size: 11px;
   text-align: center;
   display: none;
-  // do zmiany potem
   @media (min-width: 1024px) {
     display: block;
   }
@@ -62,6 +62,9 @@ main {
   border-radius: 13px;
   min-width: 100%;
   background: $darkblue;
+  @media (min-width: $desktop) {
+    width: 250px;
+  }
   &__content {
     padding: 24px;
     border-radius: 13px;
@@ -79,19 +82,18 @@ main {
       > span {
         color: $desaturatedblue;
         &:checked {
-          color: #fff;
+          color: $white;
         }
         &:hover {
-          color: #fff;
+          color: $white;
         }
       }
-      @media (min-width: 768px) {
+      @media (min-width: $desktop) {
         flex-direction: column;
-        padding-left: 24px;
         height: 130px !important;
       }
     }
-    @media (min-width: 768px) {
+    @media (min-width: $desktop) {
       height: 160px;
     }
   }
@@ -104,6 +106,7 @@ main {
   &__flex {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     @media (min-width: 1024px) {
       display: block;
     }
@@ -115,23 +118,19 @@ main {
   }
   &__icon {
     position: relative;
-    width: 60px;
-    height: 60px;
-    top: -7px;
-    left: 77%;
   }
   &__lastweek {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     text-align: right;
     line-height: 32px;
     color: $paleblue;
   }
   &__main {
-    @media (min-width: 768px) {
+    @media (min-width: $desktop) {
       grid-row-start: 1;
       grid-row-end: 3;
-      height: 400px;
+      height: 424px;
     }
   }
   &__time {
@@ -145,32 +144,33 @@ main {
   &__title {
     font-size: 18px;
     font-weight: 500;
+    padding-bottom: 10px;
   }
   &__window {
-    height: 30px;
+    height: 40px;
     overflow: hidden;
     &--description {
-      @media (min-width: 768px) {
+      @media (min-width: $desktop) {
         padding-bottom: 40px;
         height: 127px;
       }
     }
     &--icon {
-      width: 65px;
-      height: 65px;
+      width: 75px;
+      height: 75px;
       border: 3px solid white;
       border-radius: 50%;
     }
     &--main {
-      padding: 24px;
+      padding: 30px;
       background: $blue;
       border-radius: 13px;
       grid-template-columns: 65px 1fr;
       gap: 16px;
       align-items: center;
-      @media (min-width: 768px) {
+      @media (min-width: $desktop) {
         grid-template-columns: none;
-        grid-template-rows: 65px 1fr;
+        grid-template-rows: 75px 1fr;
         gap: 30px;
       }
     }
@@ -178,66 +178,57 @@ main {
   &__work {
     background: $lightredwork;
     &--icon {
-      @media (min-width: 768px) {
-        width: 50px;
-        height: 50px;
-        left: 70%;
-        top: -6px;
+      @include icon(72%, -9px);
+      @media (min-width: $desktop) {
+        @include icon(67%, -10px);
+        width: 70px;
+        height: 70px;
       }
     }
   }
   &__play {
     background: $softblue;
     &--icon {
-      @media (min-width: 768px) {
-        width: 60px;
-        height: 60px;
-        left: 66%;
-        top: -8px;
+      @include icon(72%, -3px);
+      @media (min-width: $desktop) {
+        @include icon(63%, -3px);
       }
     }
   }
   &__study {
     background: $lightredstudy;
     &--icon {
-      @media (min-width: 768px) {
-        width: 55px;
-        height: 55px;
-        left: 67%;
-        top: -6px;
+      @include icon(70%, -5px);
+      @media (min-width: $desktop) {
+        @include icon(62%, -11px);
       }
     }
   }
   &__excercise {
     background: $limegreen;
     &--icon {
-      @media (min-width: 768px) {
-        width: 55px;
-        height: 39px;
-        left: 67%;
-        top: -1px;
+      @include icon(70%, 0px);
+      @media (min-width: $desktop) {
+        @include icon(67%, -1px);
+        width: 70px;
       }
     }
   }
   &__social {
     background: $violet;
     &--icon {
-      @media (min-width: 768px) {
-        width: 60px;
-        height: 69px;
-        left: 67%;
-        top: -1px;
+      @include icon(72%, -13px);
+      @media (min-width: $desktop) {
+        @include icon(65%, -4px);
       }
     }
   }
   &__self-care {
     background: $softorange;
     &--icon {
-      @media (min-width: 768px) {
-        width: 55px;
-        height: 47px;
-        left: 67%;
-        top: -8px;
+      @include icon(75%, -8px);
+      @media (min-width: $desktop) {
+        @include icon(67%, -14px);
       }
     }
   }
@@ -257,7 +248,7 @@ main {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
-  @media (min-width: 768px) {
+  @media (min-width: $desktop) {
     font-size: 32px;
     line-height: 36px;
   }

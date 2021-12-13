@@ -1,66 +1,76 @@
-# Frontend Mentor - Time tracking dashboard
+# Frontend Mentor - Time tracking dashboard solution
 
-![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+- [Author](#author)
 
-## The challenge
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Your challenge is to build out this dashboard and get it looking as close to the design as possible.
+## Overview
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### The challenge
 
-If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-### Expected behaviour
+![Screenshot of my the Time tracking dashboard coding challenge](./design/ss.png)
 
-- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
+### Links
 
-## Where to find everything
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://bartosz-malecki.github.io/time-tracking-dashboard-challenge/)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+## My process
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+### Built with
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- SCSS
+- JavaScript
+- Mobile-first workflow
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
-
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## How to use it?
+### How to use it?
 
 Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
 
-## Available scripts
+### Available scripts
 
 `npm run start` - runs development mode
 
 `npm run build` - runs build process for production
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
+
+### Continued development
+
+I want to improve my skills. I'll do a few more challenges from Frontend Mentor, and I want to learn some new stuff like CSS and JS frameworks. Maybe in the future I'll go to full stack dev.
+
+### Useful resources
+
+- [Example resource 1](https://css-tricks.com) - This helped me for remembering CSS functionalities. I really liked this page and will use it going forward.
+- [Example resource 2](https://udemy.com) - I used a few of my buyouts courses to check out some JS stuff.
+
+## Author
+
+- Website - [Add your name here](https://github.com/bartosz-malecki)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)

@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-scss-and-webpack-yeV-pfqWv8](https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-scss-and-webpack-yeV-pfqWv8)
 - Live Site URL: [https://bartosz-malecki.github.io/time-tracking-dashboard-challenge/](https://bartosz-malecki.github.io/time-tracking-dashboard-challenge/)
 
 ## My process
@@ -71,5 +71,4 @@ I want to improve my skills. I'll do a few more challenges from Frontend Mentor,
 
 ## Author
 
-- Website - [Add your name here](https://github.com/bartosz-malecki)
 - Frontend Mentor - [@bartosz-malecki](https://www.frontendmentor.io/profile/bartosz-malecki)

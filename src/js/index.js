@@ -1,5 +1,7 @@
 import "../scss/main.scss";
 
+console.log("Hello, this is my solution to this challenge.");
+
 const daily = document.querySelector(".daily--js");
 const weekly = document.querySelector(".weekly--js");
 const monthly = document.querySelector(".monthly--js");
